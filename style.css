@@ -130,6 +130,34 @@ header h1 {
 .menus h2 {
   margin-top: 4rem;
   margin-bottom: 2rem;
+  padding-top: 4rem;
+}
+.menus .all-restaurants {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media all and (max-width: 780px) {
+  .menus .all-restaurants {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.menus .card .card-img {
+  height: 11rem;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.menus .card .card-img-1 {
+  background-image: url(../../images/restaurants/resto1.jpg);
+}
+.menus .card .card-img-2 {
+  background-image: url(../../images/restaurants/resto2.jpg);
+}
+.menus .card .card-img-3 {
+  background-image: url(../../images/restaurants/resto3.jpg);
+}
+.menus .card .card-img-4 {
+  background-image: url(../../images/restaurants/resto4.jpg);
 }
 
 /*# sourceMappingURL=style.css.map */
