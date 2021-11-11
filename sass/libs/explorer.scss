@@ -1,6 +1,6 @@
 .explorer {
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $color-background;
     height: 17rem;
     margin-top: -1.2rem;
 
@@ -20,7 +20,7 @@
         height: 3rem;
         color: white;
         padding: 1rem 1.5rem;
-        border-radius: 2rem;
+        border-radius: 1.5rem;
         border-style: none;
         font-weight: 400;
         font-size: 1rem;
@@ -28,7 +28,8 @@
         margin-top: 1rem;
 
         &:hover {
-            @include effect-hover
+            @include effect-hover;
+            opacity: 0.7;
         }
     }
 }
