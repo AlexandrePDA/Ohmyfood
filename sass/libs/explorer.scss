@@ -1,0 +1,35 @@
+.explorer {
+    text-align: center;
+    background-color: #f6f6f6;
+    height: 17rem;
+    margin-top: -1.2rem;
+
+    h2 {
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #656565;
+    }
+
+    .btn-explorer {
+        background-image: linear-gradient(#FF79DA, #9356DC);
+        height: 3rem;
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        border-style: none;
+        font-weight: 400;
+        font-size: 1rem;
+        box-shadow: 1px 4px 16px -3px grey;
+        margin-top: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.9;
+        }
+    }
+}

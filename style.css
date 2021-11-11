@@ -17,21 +17,54 @@ header {
   height: 3.5rem;
 }
 header h1 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Shrikhand", sans-serif;
 }
 
-main .city {
+.city {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background-color: #F3F3F3;
+  background-color: #eaeaea;
   padding: 0.1rem;
 }
-main h2 {
+.city h2 {
   font-size: 1rem;
   font-weight: 500;
+  color: #3b3a3a;
+}
+
+.explorer {
+  text-align: center;
+  background-color: #f6f6f6;
+  height: 17rem;
+  margin-top: -1.2rem;
+}
+.explorer h2 {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+.explorer p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #656565;
+}
+.explorer .btn-explorer {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  height: 3rem;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  border-style: none;
+  font-weight: 400;
+  font-size: 1rem;
+  box-shadow: 1px 4px 16px -3px grey;
+  margin-top: 1rem;
+}
+.explorer .btn-explorer:hover {
+  cursor: pointer;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */

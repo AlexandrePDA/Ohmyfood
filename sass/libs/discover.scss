@@ -1,16 +1,16 @@
-main {
-    .city {
+.city {
     display: flex;
     align-items: center;    
     justify-content: center;
     gap: 1rem;
-    background-color: #F3F3F3;
+    background-color: #eaeaea;
     padding: 0.1rem; 
-    }
+    
 
     h2 {
         font-size: 1rem;
         font-weight: 500;
+        color: rgb(59, 58, 58);
     }
 
 
