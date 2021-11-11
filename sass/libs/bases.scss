@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-
+// Variables
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
+// Mixin
+@mixin shadow {
+    box-shadow: 1px 4px 16px -3px grey;
+}
+
+@mixin effect-hover {
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 1px 4px 16px -3px black;
+}
+
+// Mise en page
 * {
     box-sizing: border-box;
 }
@@ -13,4 +25,7 @@ $color-tertiary: #99E2D0;
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+

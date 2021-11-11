@@ -24,13 +24,11 @@
         border-style: none;
         font-weight: 400;
         font-size: 1rem;
-        box-shadow: 1px 4px 16px -3px grey;
+        @include shadow;
         margin-top: 1rem;
 
         &:hover {
-            cursor: pointer;
-            opacity: 0.8;
-            box-shadow: 1px 4px 16px -3px black;
+            @include effect-hover
         }
     }
 }

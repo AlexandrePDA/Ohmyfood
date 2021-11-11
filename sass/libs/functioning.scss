@@ -1,0 +1,53 @@
+.fonctionnement {
+    padding: 0 1rem;
+    counter-reset: etape;
+
+    h2 {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    & ol {
+        display: flex;
+        gap: 2rem;
+        margin-left: -25px;
+        @media all and (max-width: 920px) {
+            flex-direction: column;
+        }
+    }
+
+    & li {
+        background-color: #f6f6f6;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 2rem;
+        @include shadow;
+        list-style-type: none;
+        position: relative;
+        &::before {
+            content: counter(etape);
+            counter-increment: etape;
+            background-color: $color-primary;
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            color: white;
+            position: absolute;
+            bottom: 1rem;
+            left: -1rem;
+        }
+        
+        &:hover {
+            @include effect-hover;
+        }
+
+        i.fas {
+            margin-right: 0.7rem;
+        }
+    }
+}
+
+
+
