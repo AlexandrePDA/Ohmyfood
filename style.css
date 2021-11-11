@@ -6,16 +6,32 @@
 
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   text-align: center;
   box-shadow: 0 0 0.5rem grey;
   padding: 0.3rem;
+  position: relative;
+  height: 3.5rem;
 }
 header h1 {
   font-size: 1.2rem;
   font-family: "Shrikhand", sans-serif;
+}
+
+main .city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #F3F3F3;
+  padding: 0.1rem;
+}
+main h2 {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
