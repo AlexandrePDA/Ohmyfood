@@ -64,7 +64,8 @@ header h1 {
 }
 .explorer .btn-explorer:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
+  box-shadow: 1px 4px 16px -3px black;
 }
 
 /*# sourceMappingURL=style.css.map */
