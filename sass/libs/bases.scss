@@ -10,12 +10,12 @@ $breackpoint: 920px;
 
 // Mixin
 @mixin shadow {
-    box-shadow: 1px 4px 16px -3px grey;
+    box-shadow: 1px 4px 16px -3px #d8d8d8;
 }
 
 @mixin effect-hover {
     cursor: pointer;
-    box-shadow: 1px 4px 16px -3px black;
+    box-shadow: 1px 4px 16px -3px #a1a1a1;
 }
 
 // Mise en page
