@@ -23,16 +23,18 @@
     }
     .solid {
         @include heart-effect;
-    }
         &:hover {
-        @include heart-effect-hover;
+            @include heart-effect-hover;
+            cursor: pointer;
+        }
+    }
     }
     h2 {
     font-size: 1.4rem;
     font-family: "Shrikhand", sans-serif;
     }
 
-}
+
 
 
 .food {

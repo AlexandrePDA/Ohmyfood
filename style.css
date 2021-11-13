@@ -298,11 +298,13 @@ footer .fa-hands-helping {
   opacity: 0;
   transition: all 250ms ease-in-out;
 }
-.restaurants-title:hover {
+.restaurants-title .solid:hover {
   opacity: 1;
   transform: translateY(-50%) scale(1.3);
+  cursor: pointer;
 }
-.restaurants-title h2 {
+
+h2 {
   font-size: 1.4rem;
   font-family: "Shrikhand", sans-serif;
 }
