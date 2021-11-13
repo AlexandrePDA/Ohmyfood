@@ -143,7 +143,7 @@ header h1 {
 }
 @media all and (max-width: 780px) {
   .menus .all-restaurants {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 .menus .card {
@@ -266,6 +266,62 @@ footer .fa-utensils {
 footer .fa-hands-helping {
   font-size: 0.6rem;
   padding-right: 0.3rem;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.restaurants-title {
+  position: relative;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #f6f6f6;
+  border-radius: 3rem 3rem 0 0;
+  margin-top: -3rem;
+}
+.restaurants-title .fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.restaurants-title .solid {
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.restaurants-title:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.3);
+}
+.restaurants-title h2 {
+  font-size: 1.4rem;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.food {
+  background-color: #f6f6f6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media all and (max-width: 780px) {
+  .food {
+    grid-template-columns: 1fr;
+  }
+}
+
+.food-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-// Variables
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-background: #f6f6f6;
-$breackpoint: 920px; 
 
-// Mixin
-@mixin shadow {
-    box-shadow: 1px 4px 16px -3px #d8d8d8;
-}
-
-@mixin effect-hover {
-    cursor: pointer;
-    box-shadow: 1px 4px 16px -3px #a1a1a1;
-}
 
 // Mise en page
 * {

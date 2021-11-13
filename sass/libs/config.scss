@@ -1,0 +1,31 @@
+// Variables
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-background: #f6f6f6;
+$breackpoint-920: 920px; 
+$breackpoint-780: 780px;
+
+// Mixin
+@mixin shadow {
+    box-shadow: 1px 4px 16px -3px #d8d8d8;
+}
+
+@mixin effect-hover {
+    cursor: pointer;
+    box-shadow: 1px 4px 16px -3px #a1a1a1;
+}
+
+@mixin heart-effect {
+    color: transparent;
+    background-image: linear-gradient($color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    opacity: 0; 
+    transition: all 250ms ease-in-out;
+}
+
+@mixin heart-effect-hover {
+        opacity: 1;
+        transform: translateY(-50%) scale(1.3);
+}

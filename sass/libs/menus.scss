@@ -10,8 +10,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        @media all and (max-width: 780px) {
-            grid-template-columns: repeat(1,1fr);
+        @media all and (max-width: $breackpoint-780) {
+            grid-template-columns: 1fr;
         }
     }
 
@@ -93,15 +93,9 @@
         transform: translateY(-50%);
     }
     .fas {
-        color: transparent;
-        background-image: linear-gradient($color-secondary, $color-primary);
-        background-clip: text;
-        -webkit-background-clip: text;  
-        opacity: 0; 
-        transition: all 250ms ease-in-out;
+        @include heart-effect;
         &:hover {
-            opacity: 1;
-            transform: translateY(-50%) scale(1.3);
+            @include heart-effect-hover;
         }
     }
     }
