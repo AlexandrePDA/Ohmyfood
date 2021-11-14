@@ -17,24 +17,16 @@
 
     .card {
         border-radius: 1rem;
-        & .card-img {
-            height: 11rem;
-            background-size: cover;
-            background-position: center;
+        .card-img {
+            margin-bottom: -0.5rem;
+        }
+        & .card-img img {
+            height: 10rem;
+            width: 100%;
+            object-fit: cover;
             border-radius: 1rem 1rem 0 0;
-            @include shadow;
-        }
-        & .card-img-1 {
-            background-image: url(../../images/restaurants/resto1.jpg);
-        }
-        & .card-img-2 {
-            background-image: url(../../images/restaurants/resto2.jpg);
-        }
-        & .card-img-3 {
-            background-image: url(../../images/restaurants/resto3.jpg);
-        }
-        & .card-img-4 {
-            background-image: url(../../images/restaurants/resto4.jpg);
+            box-shadow: none;
+            object-position: center;
         }
 
         &:hover {
