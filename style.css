@@ -260,6 +260,26 @@ footer .fa-hands-helping {
   padding-right: 0.3rem;
 }
 
+#restaurant-page {
+  background-color: #f6f6f6;
+}
+
+header {
+  background-color: white;
+}
+
+.header-title {
+  position: relative;
+}
+
+.back {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 0 0.7rem 1.2rem;
+  font-size: 1.2rem;
+}
+
 .restaurant-image img {
   width: 100%;
   height: 45vh;
@@ -270,7 +290,7 @@ footer .fa-hands-helping {
 
 .restaurants-title {
   position: relative;
-  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem;
   background-color: #f6f6f6;
   border-radius: 3rem 3rem 0 0;
   margin-top: -3rem;
@@ -298,21 +318,87 @@ footer .fa-hands-helping {
   cursor: pointer;
 }
 
-.food {
+.food-main {
+  padding: 0 2rem;
+  background-color: #f6f6f6;
+}
+.food-main h4, .food-main p {
+  margin: 0;
+  padding: 0rem;
+}
+.food-main .food {
   background-color: #f6f6f6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 @media all and (max-width: 780px) {
-  .food {
+  .food-main .food {
     grid-template-columns: 1fr;
   }
 }
-
-.food-main {
-  padding: 0 2rem;
-  background-color: #f6f6f6;
+.food-main .menu-title {
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+}
+.food-main .menu-title::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.food-main .menu-items {
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  height: 4.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 100%;
+  box-shadow: 1px 4px 16px -3px #d8d8d8;
+}
+.food-main .menu-items:hover {
+  cursor: pointer;
+  box-shadow: 1px 4px 16px -3px #a1a1a1;
+}
+.food-main .menu-items .menu-items__title {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.1rem;
+}
+.food-main .menu-items .menu-items__description {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1rem 0 0 1rem;
+  font-weight: 300;
+}
+.food-main .menu-items span.menu-items__price {
+  margin-right: 1rem;
+  font-weight: 900;
+}
+.food-main .order {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  height: 3rem;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 1.5rem;
+  border-style: none;
+  font-weight: 400;
+  font-size: 1rem;
+  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  margin-top: 1rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+.food-main .order:hover {
+  cursor: pointer;
+  box-shadow: 1px 4px 16px -3px #a1a1a1;
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */

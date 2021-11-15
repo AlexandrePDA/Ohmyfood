@@ -1,3 +1,23 @@
+#restaurant-page {
+    background-color: $color-background;
+}
+
+header {
+    background-color: white;
+}
+
+.header-title {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 0.7rem 1.2rem;
+    font-size: 1.2rem;
+}
+
 .restaurant-image {
     img {
     width: 100%;
@@ -10,7 +30,7 @@
 
 .restaurants-title {
     position: relative;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 1.5rem;
     background-color: $color-background;
     border-radius: 3rem 3rem 0 0;
     margin-top: -3rem;
@@ -32,19 +52,80 @@
     }
     }
 
-
-.food {
-    background-color: $color-background;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    @media all and (max-width: $breackpoint-780) {
-        grid-template-columns: 1fr;
-    }
-}
-
 .food-main {
     padding: 0 2rem;
     background-color: $color-background;
+    & h4, p {
+        margin: 0;
+        padding: 0rem;
+    }
+    .food {
+        background-color: $color-background;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        @media all and (max-width: $breackpoint-780) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .menu-title {
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: 400;
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.25rem;
+            background-color: $color-tertiary;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .menu-items {
+        margin-bottom: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 4.5rem;
+        overflow: hidden;
+        cursor: pointer;
+        max-width: 100%;
+        @include shadow;
+        &:hover {
+        @include effect-hover;
+        }
+        .menu-items__title {
+            padding: 1rem 0 0 1rem;
+            font-size: 1.1rem;
+        }
+        .menu-items__description {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.1rem 0 0 1rem;
+            font-weight: 300;
+            // overflow: hidden;
+            // white-space: nowrap;
+            // text-overflow: ellipsis;
+            
+        }
+            span.menu-items__price {
+                margin-right: 1rem;
+                font-weight: 900;
+            }
+        
+    }
+
+    .order {
+        @include btn-animation;
+        width: 50%;
+        margin: auto;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    
+
 }
+
+
 
