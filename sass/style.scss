@@ -1,10 +1,12 @@
-@import "libs/bases.scss";
-@import "libs/config.scss";
-@import "libs/header.scss";
-@import "libs/discover.scss";
-@import "libs/explorer.scss";
-@import "libs/functioning.scss";
-@import "libs/menus.scss";
-@import "libs/footer.scss";
-@import "pages/restaurants.scss";
+@import "base/_bases.scss";
+@import "utils/_mixins.scss";
+@import "utils/_variables.scss";
+@import "layouts/_header.scss";
+@import "pages/homepage/_discover.scss";
+@import "pages/homepage/_explorer.scss";
+@import "pages/homepage/_functioning.scss";
+@import "pages/homepage/_menus.scss";
+@import "layouts/_footer.scss";
+@import "pages/restaurants/_restaurants.scss";
+
 
