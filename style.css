@@ -441,11 +441,20 @@ header {
   0% {
     color: #99E2D0;
   }
+  20% {
+    color: #FF79DA;
+  }
   33% {
     color: #9356DC;
   }
+  50% {
+    color: #99E2D0;
+  }
   66% {
     color: #FF79DA;
+  }
+  80% {
+    color: #9356DC;
   }
   100% {
     color: #99E2D0;

@@ -25,11 +25,20 @@
     0% {
         color: $color-tertiary
     }
+    20% {
+        color: $color-secondary;
+    }
     33% {
         color: $color-primary;
     }
+    50% {
+        color: $color-tertiary;
+    }
     66% {
         color: $color-secondary;
+    }
+    80% {
+        color: $color-primary;
     }
     100% {
         color: $color-tertiary;
