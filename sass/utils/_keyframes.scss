@@ -1,10 +1,37 @@
+// déroulement des menus
 @keyframes appear {
     from {
-        transform: scale(0);
+        transform: translateY(50%);
         opacity: 0;
     }
     to {
-        transform: scale(1);
+        transform: translateY(0);
         opacity: 1;
+    }
+}
+
+// Loader
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes color-loader {
+    0% {
+        color: $color-tertiary
+    }
+    33% {
+        color: $color-primary;
+    }
+    66% {
+        color: $color-secondary;
+    }
+    100% {
+        color: $color-tertiary;
     }
 }
