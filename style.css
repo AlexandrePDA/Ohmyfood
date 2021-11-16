@@ -322,6 +322,11 @@ header {
   padding: 0 2rem;
   background-color: #f6f6f6;
 }
+@media all and (max-width: 360px) {
+  .food-main {
+    padding: 0 1rem;
+  }
+}
 .food-main h4, .food-main p {
   margin: 0;
   padding: 0rem;
@@ -332,7 +337,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-@media all and (max-width: 780px) {
+@media all and (max-width: 920px) {
   .food-main .food {
     grid-template-columns: 1fr;
   }
@@ -360,6 +365,8 @@ header {
   cursor: pointer;
   max-width: 100%;
   box-shadow: 1px 4px 16px -3px #d8d8d8;
+  animation: appear 1.5s;
+  animation-fill-mode: both;
 }
 .food-main .menu-items:hover {
   cursor: pointer;
@@ -378,6 +385,15 @@ header {
 .food-main .menu-items span.menu-items__price {
   margin-right: 1rem;
   font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.food-main .delay-1 {
+  animation: appear 2s;
+}
+.food-main .delay-2 {
+  animation: appear 2.5s;
 }
 .food-main .order {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -399,6 +415,17 @@ header {
   cursor: pointer;
   box-shadow: 1px 4px 16px -3px #a1a1a1;
   opacity: 0.7;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

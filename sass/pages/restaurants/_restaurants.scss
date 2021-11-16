@@ -55,6 +55,9 @@ header {
 .food-main {
     padding: 0 2rem;
     background-color: $color-background;
+    @media all and (max-width: 360px) {
+        padding: 0 1rem;
+    }
     & h4, p {
         margin: 0;
         padding: 0rem;
@@ -64,7 +67,7 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        @media all and (max-width: $breackpoint-780) {
+        @media all and (max-width: $breackpoint-920) {
             grid-template-columns: 1fr;
         }
     }
@@ -91,6 +94,8 @@ header {
         cursor: pointer;
         max-width: 100%;
         @include shadow;
+        animation: appear 1.5s;
+        animation-fill-mode: both;
         &:hover {
         @include effect-hover;
         }
@@ -103,17 +108,26 @@ header {
             justify-content: space-between;
             padding: 0.1rem 0 0 1rem;
             font-weight: 300;
-            // overflow: hidden;
-            // white-space: nowrap;
-            // text-overflow: ellipsis;
+            
             
         }
             span.menu-items__price {
                 margin-right: 1rem;
                 font-weight: 900;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
             }
         
     }
+    .delay-1 {
+        animation: appear 2s;   
+    }
+    .delay-2 {
+        animation: appear 2.5s;    
+    }
+    
+    
 
     .order {
         @include btn-animation;
@@ -127,5 +141,8 @@ header {
 
 }
 
+// overflow: hidden;
+// white-space: nowrap;
+// text-overflow: ellipsis;
 
 
