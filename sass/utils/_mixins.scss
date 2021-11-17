@@ -38,3 +38,9 @@
             opacity: 0.7;
         }
 }
+
+@mixin hidden-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

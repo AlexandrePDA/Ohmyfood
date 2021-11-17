@@ -294,13 +294,13 @@ header {
   background-color: #f6f6f6;
   border-radius: 3rem 3rem 0 0;
   margin-top: -3rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-family: "Shrikhand", sans-serif;
 }
 .restaurants-title .fa-heart {
   font-size: 1.5rem;
   position: absolute;
-  right: 2rem;
+  right: 1.9rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -337,10 +337,13 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
-@media all and (max-width: 920px) {
+@media all and (max-width: 1235px) {
   .food-main .food {
     grid-template-columns: 1fr;
   }
+}
+.food-main .food .menu-category {
+  overflow: hidden;
 }
 .food-main .menu-title {
   position: relative;
@@ -363,29 +366,58 @@ header {
   margin-bottom: 1rem;
   height: 4.5rem;
   cursor: pointer;
-  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  overflow: hidden;
+  box-shadow: 10px 5px 5px #f6f6f6;
   animation: appear 1.5s;
   animation-fill-mode: both;
-}
-.food-main .menu-items:hover {
-  cursor: pointer;
-  box-shadow: 1px 4px 16px -3px #a1a1a1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food-main .menu-items .menu-items__price {
   margin-left: auto;
-  font-weight: 900;
+  font-weight: 500;
+  font-size: 0.9rem;
   padding: 1rem;
   display: flex;
   align-items: flex-end;
 }
 .food-main .menu-items .menu-items__check {
   background-color: #99E2D0;
+  margin-right: -4rem;
+  width: 4rem;
+  transition: margin-right 1s;
+  display: grid;
+  place-items: center;
+}
+.food-main .menu-items .menu-items__check .fa-check-circle {
+  font-size: 1.5rem;
+  color: white;
+}
+.food-main .menu-items:hover .menu-items__check {
+  margin-right: 0;
+  display: grid;
+  place-items: center;
+}
+.food-main .menu-items:hover .fa-check-circle {
+  animation: check-spin 1s;
 }
 .food-main .menu-items .menu-items__description {
   padding: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food-main .menu-items .menu-items__description .menu-items-description__p {
   font-weight: 300;
+  font-size: 0.9rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.food-main .menu-items .menu-items__description .menu-items-description__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .food-main .delay-1 {
   animation: appear 2s;
@@ -437,24 +469,39 @@ header {
 @keyframes color-loader {
   0% {
     color: #99E2D0;
+    transform: scale(1);
   }
   20% {
     color: #FF79DA;
+    transform: scale(2);
   }
   33% {
     color: #9356DC;
+    transform: scale(1);
   }
   50% {
     color: #99E2D0;
+    transform: scale(2);
   }
   66% {
     color: #FF79DA;
+    transform: scale(1);
   }
   80% {
     color: #9356DC;
+    transform: scale(2);
   }
   100% {
     color: #99E2D0;
+    transform: scale(1);
+  }
+}
+@keyframes check-spin {
+  from {
+    transform: rotate(-270deg);
+  }
+  to {
+    transform: rotate(0);
   }
 }
 .loader {
