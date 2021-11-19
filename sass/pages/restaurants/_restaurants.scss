@@ -13,7 +13,7 @@ header {
 .back {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 2px;
     padding: 0 0 0.7rem 1.2rem;
     font-size: 1.2rem;
 }
@@ -34,8 +34,10 @@ header {
     background-color: $color-background;
     border-radius: 3rem 3rem 0 0;
     margin-top: -3rem;
-    font-size: 1rem;
+    > h1 {
     font-family: "Shrikhand", sans-serif;
+    font-size: 1.5rem;
+    }
     .fa-heart {
         font-size: 1.5rem;
         position: absolute;
@@ -53,12 +55,12 @@ header {
     }
 
 .food-main {
-    padding: 0 2rem;
+    padding: 0 1.2rem;
     background-color: $color-background;
     @media all and (max-width: 360px) {
         padding: 0 1rem;
     }
-    & h4, p {
+    & h3, p {
         margin: 0;
         padding: 0rem;
     }
@@ -78,6 +80,7 @@ header {
         position: relative;
         padding-bottom: 0.5rem;
         font-weight: 400;
+        font-size: 1rem;
         &::after {
             content: "";
             width: 3rem;
@@ -102,7 +105,6 @@ header {
         white-space: nowrap;
         text-overflow: ellipsis;
         .menu-items__price {
-            margin-left: auto;
             font-weight: 500;
             font-size: 0.9rem;
             padding: 1rem;
@@ -111,9 +113,8 @@ header {
         }
         .menu-items__check {
             background-color: $color-tertiary;
-            margin-right: -4rem;
-            width: 4rem;
-            transition: margin-right 1s;
+            width: 0;
+            transition: all 1s;
             display: grid;
             place-items: center;
             .fa-check-circle {
@@ -123,7 +124,7 @@ header {
         }
         &:hover {
             .menu-items__check {
-            margin-right: 0;
+            width: 4rem;
             display: grid;
             place-items: center;
             }
@@ -133,6 +134,7 @@ header {
         }
         .menu-items__description {
             padding: 1rem;
+            flex: 1;
             @include hidden-text; 
             .menu-items-description__p {
                 font-weight: 300;
@@ -141,6 +143,8 @@ header {
             }
             .menu-items-description__title {
                 @include hidden-text; 
+                font-size: 1.05rem;
+                margin-bottom: 0.3rem;
             }
         }
         
