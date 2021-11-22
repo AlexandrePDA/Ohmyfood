@@ -2,6 +2,8 @@
 
 Troisième projet du parcours "Développeur web" d'OpenClassroom. L'objectif est d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass
 
+Référence : PiresdeAlmeida_3_11112021
+
 Lien du site réalisé : https://alexandrepda.github.io/Ohmyfood/index.html
 
 # Objectifs
