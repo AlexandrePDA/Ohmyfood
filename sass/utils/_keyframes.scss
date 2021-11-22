@@ -24,27 +24,27 @@
 @keyframes color-loader {
     0% {
         color: $color-tertiary;
-        transform: scale(1);
+        transform: scale(0.5);
     }
     20% {
         color: $color-secondary;
-        transform: scale(2);
+        transform: scale(1);
     }
     33% {
         color: $color-primary;
-        transform: scale(1);
+        transform: scale(0.5);
     }
     50% {
         color: $color-tertiary;
-        transform: scale(2);
+        transform: scale(1);
     }
     66% {
         color: $color-secondary;
-        transform: scale(1);
+        transform: scale(0.5);
     }
     80% {
         color: $color-primary;
-        transform: scale(2);
+        transform: scale(1);
     }
     100% {
         color: $color-tertiary;

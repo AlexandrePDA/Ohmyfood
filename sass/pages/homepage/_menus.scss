@@ -17,6 +17,7 @@
 
     .card {
         border-radius: 1rem;
+        @include shadow;
         .card-img {
             margin-bottom: -0.5rem;
         }

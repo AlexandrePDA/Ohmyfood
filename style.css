@@ -52,8 +52,8 @@ header .header-title {
   font-size: 1.5rem;
   padding-top: 2rem;
 }
-.explorer p {
-  font-size: 1rem;
+.explorer .explorer__p {
+  font-size: 1.1rem;
   font-weight: 300;
   color: #656565;
 }
@@ -66,7 +66,7 @@ header .header-title {
   border-style: none;
   font-weight: 400;
   font-size: 1rem;
-  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  box-shadow: 1px 4px 16px -3px #bbbbbb;
   margin-top: 1rem;
 }
 .explorer .btn-explorer:hover {
@@ -97,8 +97,9 @@ header .header-title {
   background-color: #f6f6f6;
   padding: 1.8rem 2rem;
   flex-grow: 1;
+  font-weight: 400;
   border-radius: 1.3rem;
-  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  box-shadow: 1px 4px 16px -3px #bbbbbb;
   list-style-type: none;
   position: relative;
 }
@@ -148,6 +149,7 @@ header .header-title {
 }
 .menus .card {
   border-radius: 1rem;
+  box-shadow: 1px 4px 16px -3px #bbbbbb;
 }
 .menus .card .card-img {
   margin-bottom: -0.5rem;
@@ -166,7 +168,7 @@ header .header-title {
 }
 .menus .new {
   position: relative;
-  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  box-shadow: 1px 4px 16px -3px #bbbbbb;
   border-radius: 1rem;
 }
 .menus .new:hover {
@@ -350,7 +352,7 @@ header {
 .food-main .menu-title {
   position: relative;
   padding-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1rem;
 }
 .food-main .menu-title::after {
@@ -370,7 +372,7 @@ header {
   height: 4.5rem;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 10px 5px 5px #f6f6f6;
+  box-shadow: 0px 2px 5px #d4d3d3;
   animation: appear 1.5s;
   animation-fill-mode: both;
   white-space: nowrap;
@@ -420,7 +422,8 @@ header {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 1.05rem;
+  font-size: 1rem;
+  font-weight: 600;
   margin-bottom: 0.3rem;
 }
 .food-main .delay-1 {
@@ -428,6 +431,9 @@ header {
 }
 .food-main .delay-2 {
   animation: appear 2.5s;
+}
+.food-main .delay-3 {
+  animation: appear 3s;
 }
 .food-main .order {
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -438,7 +444,7 @@ header {
   border-style: none;
   font-weight: 400;
   font-size: 1rem;
-  box-shadow: 1px 4px 16px -3px #d8d8d8;
+  box-shadow: 1px 4px 16px -3px #bbbbbb;
   margin-top: 1rem;
   width: 50%;
   margin: auto;
@@ -473,27 +479,27 @@ header {
 @keyframes color-loader {
   0% {
     color: #99E2D0;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   20% {
     color: #FF79DA;
-    transform: scale(2);
+    transform: scale(1);
   }
   33% {
     color: #9356DC;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   50% {
     color: #99E2D0;
-    transform: scale(2);
+    transform: scale(1);
   }
   66% {
     color: #FF79DA;
-    transform: scale(1);
+    transform: scale(0.5);
   }
   80% {
     color: #9356DC;
-    transform: scale(2);
+    transform: scale(1);
   }
   100% {
     color: #99E2D0;
